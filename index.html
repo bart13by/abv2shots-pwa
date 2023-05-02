@@ -28,7 +28,7 @@
 <div id="input_section">
 <div class="row">  
 <span class="form_label">Volume</span> 
-<input id="vol" type="text" size="8" />
+<input id="vol" type="text" size="8" inputmode="numeric" />
 <select id="inUnits">
   <option value="oz">oz</option>
   <option value="ml">ml</option>
@@ -36,7 +36,7 @@
 </div>
 <div class="row">
   <span class="form_label">ABV </span>
-  <input id="abv" type="text" size="8"  /> 
+  <input id="abv" type="text" size="8"  inputmode="numeric" /> 
 
 <input type="submit" value="Calculate" id="calculate" onclick="calculateShots(this)"/>
 <input type="button" value="Clear" id="clear_drinks" onclick="clearDrinks()" />
