@@ -28,19 +28,21 @@
 <div id="input_section">
 <div class="row">  
 <span class="form_label">Volume</span> 
-<input id="vol" type="text" size="8" onchange="calculateShots()" />
-<select id="inUnits" onchange="calculateShots()">
+<input id="vol" type="text" size="8" />
+<select id="inUnits">
   <option value="oz">oz</option>
   <option value="ml">ml</option>
 </select>
 </div>
 <div class="row">
   <span class="form_label">ABV </span>
-  <input id="abv" type="text" size="8" onchange="calculateShots()" /> 
+  <input id="abv" type="text" size="8"  /> 
 
-<input type="submit" value="Calculate" onclick="calculateShots()"/>
+<input type="submit" value="Calculate" id="calculate" onclick="calculateShots(this)"/>
+<input type="button" value="Clear" id="clear_drinks" onclick="clearDrinks()" />
 </div>
 </div>
+<div id="totals"></div>
 <div id="output"></div>
   </div>
   <script src="js/main.js"></script>
