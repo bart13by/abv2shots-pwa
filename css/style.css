@@ -2,10 +2,8 @@ body {
   font-family: sans-serif;
 }
 
-/* Make content area fill the entire browser window */
 html,
 .fullscreen {
-  display: flex;
   height: 100%;
   margin-left: 10;
   padding: 0;
@@ -28,7 +26,12 @@ input {
     flex-wrap: nowrap;
     
   }
-  
+  .info {
+    display: none;
+  }
+  .container {
+    margin: auto;
+  }
 }
 .row {
   margin-bottom: 1ex;
@@ -38,7 +41,8 @@ input {
 .container {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  
+  margin-left: 2em;
   align-content: flex-start;
   gap: 10px;
   /*text-align: center;*/
