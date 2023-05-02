@@ -7,17 +7,63 @@ html,
 .fullscreen {
   display: flex;
   height: 100%;
-  margin: 0;
+  margin-left: 10;
   padding: 0;
   width: 100%;
+  
+
+}
+input {
+  margin-left:1em;
+}
+@media (max-width: 600px) {
+  .row {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    
+
+  }
+  .title {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    
+  }
+  
+}
+.row {
+  margin-bottom: 1ex;
 }
 
 /* Center the content in the browser window */
 .container {
+  display: flex;
+  flex-direction: column;
   margin: auto;
-  text-align: center;
+  align-content: flex-start;
+  gap: 10px;
+  /*text-align: center;*/
 }
 
-.title {
+/*.title {
   font-size: 3rem;
+*/}
+#input { margin-top: 2ex;
+margin-left: 3px;
+margin-bottom: 2ex;}
+
+#output {
+  margin: 1ex 1em 1em 1ex;
+}
+.alc_volume { 
+  font-size: smaller; 
+}
+.shots {
+  margin-bottom: 1ex;
+}
+.shots_label::after {
+  content: ": ";
+
+}
+.shots_value {
+  font-weight: bold;
 }

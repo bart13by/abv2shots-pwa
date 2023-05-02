@@ -2,22 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Hello World</title>
+  <title>ABV to Shots</title>
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="images/hello-icon-152.png">
+  <script src="js/shots.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="white"/>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Hello World">
+  <meta name="apple-mobile-web-app-title" content="ABV to Shots Converter">
   <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
   <meta name="msapplication-TileColor" content="#FFFFFF">
+  
+
 </head>
 <body class="fullscreen">
   <div class="container">
-    <h1 class="title">Hello World!</h1>
+    <h1 class="title">How Many Shots?</h1>
+    <div class="info">
+  Calculate how many shots (50 ml and 1.5 oz) of 80 proof liquor has the same amount of alcohol as a given volume and ABV. EG, 12 oz of 5% beer is equal to one US shot of 80 proof vodka.
+</div>
+<div id="input">
+<div class="row">  
+Volume <input id="vol" type="text" onchange="calculateShots()" />
+<select id="inUnits" onchange="calculateShots()">
+  <option value="oz">oz</option>
+  <option value="ml">ml</option>
+</select>
+</div>
+<div class="row">
+ABV <input id="abv" type="text" onchange="calculateShots()" />%  
+
+<input type="button" value="Calculate" onclick="calculateShots()"/>
+</div>
+</div>
+<div id="output"></div>
   </div>
   <script src="js/main.js"></script>
 </body>
