@@ -12,7 +12,11 @@ html,
 
 }
 input {
-  margin-left:1em;
+  margin-left:.5em;
+  margin-right: 1em;
+}
+.form_label::after {
+  content: ':';
 }
 @media (max-width: 600px) {
   .row {
@@ -48,10 +52,7 @@ input {
   /*text-align: center;*/
 }
 
-/*.title {
-  font-size: 3rem;
-*/}
-#input { margin-top: 2ex;
+#input_section { margin-top: 2ex;
 margin-left: 3px;
 margin-bottom: 2ex;}
 
