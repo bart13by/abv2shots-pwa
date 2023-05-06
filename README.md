@@ -1,3 +1,4 @@
+This is an old readme and needs to be replaced
 # Hello PWA
 The classic Hello World program as a Progressive Web App
 
