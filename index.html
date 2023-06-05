@@ -21,13 +21,18 @@
 </head>
 <body class="fullscreen">
   <div class="container">
-    <h1 class="title">How Many Shots?</h1>
+    <h1 class="title">Drinks Calculator</h1>
     <div class="info">
-  Calculate how many shots (50 ml and 1.5 oz) of 80 proof liquor has the same amount of alcohol as a given volume and ABV. EG, 12 oz of 5% beer is equal to one US shot of 80 proof vodka.
+
+      Enter volume and ABV of a beverage to calculate how many units of
+      alcohol, expressed as the equivalent number of shots (50 ml and 1.5 oz)
+      of 80 proof spirits. EG, 12 oz of 5% beer is equal to one US shot of 80
+      proof vodka.
+
 </div>
 <div id="input_section">
 <div class="row">  
-<span class="form_label">Volume</span> 
+<span class="form_label">Volume: </span> 
 <input id="vol" type="text" size="8" inputmode="decimal" />
 <select id="inUnits">
   <option value="oz">oz</option>
@@ -35,7 +40,7 @@
 </select>
 </div>
 <div class="row">
-  <span class="form_label">ABV </span>
+  <span class="form_label">ABV: </span>
   <input id="abv" type="text" size="8"  inputmode="decimal" /> 
 
 <input type="submit" value="Calculate" id="calculate" onclick="calculateShots(this)"/>
